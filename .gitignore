@@ -1,0 +1,39 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment / secrets
+.env
+.env.*
+
+# Node / React
+node_modules/
+frontend/node_modules/
+
+# Large model files and videos
+models/*.dat
+demo/*.mp4
+
+# Logs
+*.log
+
+# macOS
+.DS_Storevenv/
+cat >> .gitignore <<'EOF'
+
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Large model archives
+models/*.dat.bz2
+EOF

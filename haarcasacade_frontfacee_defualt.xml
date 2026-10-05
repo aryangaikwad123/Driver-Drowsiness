@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Download the official OpenCV frontal face Haar cascade into this file.
+# Save this script as the target path and run it to populate the XML.
+set -euo pipefail
+
+DEST="/Users/aryangaikwad/Desktop/Drowsiness Detection/haarcasacade_frontfacee_defualt.xml"
+URL="https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml"
+
+mkdir -p "$(dirname "$DEST")"
+curl -fsSL "$URL" -o "$DEST"
+echo "Downloaded haarcascade_frontalface_default.xml to: $DEST"
